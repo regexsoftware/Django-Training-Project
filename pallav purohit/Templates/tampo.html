@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>home</title>
+  <meta name= "viewport" content="width=device-width, initial-scale = 1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    img{
+      max-width: 100%;
+      size: 200px;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="{% url 'dashboard' %}">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="{% url 'businessman' %}">BUSINESS</a></li>
+        <li><a href="{% url 'customer' %}">Customer</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>BUSINESS TECHS</h1>      
+    <p>HERE YOU CAN BE A CUSTOMER OR BUSINESS MEN</p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Some ANALYSES FOR YOU GUYS</h3><br>
+ <!----> <div class="row">
+    <div class="col-sm-3">
+      <p>ZOMATO IN WORLD</p>
+      <a href="/static/zop.jpg"><img src="/static/zop.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"D> 
+      <p>ZOMATO IN INDIA</p>
+      <img src="/static/zoi.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>AVERAGE COST FOR TWO IN NCR</p>
+      <img src="/static/ac.jpg" class="img-responsive" style="width:150%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>AVERAGE COST FOR TWO IN NON NCR</p>
+      <img src="/static/acn.jpg" class="img-responsive" style="width:100%" alt="Image">
+
+    </div>
+  </div>
+</div><br>
+<div class="container-fluid bg-3 text-center">    
+  
+  <div class="row">
+    <div class="col-sm-3">   
+      <p>FAST FOOD CENTRE IN NCR</p>
+      <img src="/static/ffc.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>ZOMATO PRICE VS RATING</p>
+      <img src="/static/PRICE VS RATING.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>ZOMATO TOP 10 CITIES IN INDIA </p>
+      <img src="/static/ten.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>VOTING VS RATING IN ZOMATO</p>
+      <img src="/static/vrz.JPEG" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>MADE BY PALLAV PUROHIT AND MOHAMMED ADIL</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>

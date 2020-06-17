@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{# yonetim/templates/list.html #}
+{% load render_table from django_tables2 %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>RESULTS:-</h1>
+
+<table>
+        {% render_table queryset %}
+</table>
+{% endblock %}
